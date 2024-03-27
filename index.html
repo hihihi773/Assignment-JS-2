@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="press-start-2p-regular">Create Your Perfect Smoothie</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="press-start-2p-regular">Customize Your Blend</h2>
+            <form id="smoothie-form">
+                <label for="name">Smoothie Name:</label>
+                <input type="text" id="name" name="name" placeholder="My Sunshine Smoothie" required>
+
+                <fieldset>
+                    <legend>Fruits and Greens:</legend>
+                    <label><input type="checkbox" name="ingredients" value="Mango"> Mango</label>
+                    <label><input type="checkbox" name="ingredients" value="Kale"> Kale</label>
+                    <label><input type="checkbox" name="ingredients" value="Avocado"> Avocado</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Protein Boosters:</legend>
+                    <label><input type="checkbox" name="protein" value="Whey"> Whey Protein</label>
+                    <label><input type="checkbox" name="protein" value="Pea"> Pea Protein</label>
+                 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Your Base:</legend>
+                    <label><input type="radio" name="base" value="Almond Milk" required> Almond Milk</label>
+                    <label><input type="radio" name="base" value="Soy Milk" required> Soy Milk</label>
+                   
+                </fieldset>
+
+                <button type="button" id="order-btn">Blend It!</button>
+            </form>
+        </section>
+        <section id="smoothie-description">
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with us at: <a href="https://mrsmoothieben.com">mrsmoothieben.com</a></p>
+        <p>Reach out: +1 (705)-220-2791</p>
+    </footer>
+</body>
+</html>
